@@ -64,3 +64,75 @@ Students (Id, Name)
 Classes (Id, Name, SchoolId, TeacherId)
 StudentClasses (StudentId, ClassId) (Join Table for Many-to-Many relationship)
 Grades (Id, StudentId, ClassId, GradeLetter)
+
+
+RAW Data that will be populated after running the DBSeeder followed by migrations
+Districts
+Central District
+
+Schools
+Greenwood High (District: Central District)
+Riverside Academy (District: Central District)
+
+Teachers (11 Regular + 1 Substitute)
+John Doe (Regular)
+Sarah Smith (Regular)
+Michael Johnson (Regular)
+Emma Brown (Regular)
+David Wilson (Regular)
+Sophia Miller (Regular)
+James Anderson (Regular)
+Olivia Thomas (Regular)
+William Martinez (Regular)
+Benjamin Harris (Regular)
+Charlotte White (Regular)
+Liam Substitute (Substitute)
+
+Students
+Student 1
+Student 2
+Student 3
+Student 4
+Student 5
+Student 6
+Student 7
+Student 8
+Student 9
+Student 10
+Student 11
+Student 12
+Student 13
+Student 14
+Student 15
+Student 16
+Student 17
+Student 18
+Student 19
+Student 20
+
+Classes
+Math 101 (Greenwood High, Teacher: John Doe)
+Science 101 (Greenwood High, Teacher: Sarah Smith)
+History 101 (Riverside Academy, Teacher: Michael Johnson)
+Physics 102 (Greenwood High, Teacher: Emma Brown)
+Chemistry 103 (Riverside Academy, Teacher: David Wilson)
+Biology 104 (Greenwood High, Teacher: Sophia Miller)
+English 105 (Greenwood High, Teacher: James Anderson)
+Geography 106 (Riverside Academy, Teacher: Olivia Thomas)
+Economics 107 (Greenwood High, Teacher: William Martinez)
+Computer Science 108 (Riverside Academy, Teacher: Benjamin Harris)
+Student-Class Assignments (Every student in every class)
+Each student (1-20) is assigned to all 10 classes.
+
+Grades (Randomized for Each Student per Class)
+Each student has a random letter grade for each class. Example for Student 1:
+Math 101 → A
+Science 101 → B
+History 101 → C
+Physics 102 → A
+Chemistry 103 → F
+Biology 104 → B
+English 105 → D
+Geography 106 → C
+Economics 107 → A
+Computer Science 108 → B
